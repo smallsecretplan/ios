@@ -24,7 +24,7 @@ class QACContentVC: UIViewController {
         
          self.navigationItem.title=Title.menun1_title
       
-        let newBackButton = UIBarButtonItem(title:"", style:.plain, target: self, action: #selector(QACContentVC.Back(sender:)))
+        let newBackButton = UIBarButtonItem(image: UIImage(named: "back.png"), style:.plain, target: self, action: #selector(QACContentVC.Back(sender:)))
         self.navigationItem.leftBarButtonItem = newBackButton
          message.text = Common.data[Common.index]
         
@@ -80,9 +80,8 @@ class QACContentVC: UIViewController {
     
     func CheckSattus()
     {
-        
-        //message.text=Common.data[Common.index]
-        if(Common.index==10){
+    
+        if(Common.index==Common.total){
            
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let target = storyboard.instantiateViewController(withIdentifier: "AnswerVC")

@@ -18,7 +18,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     let width = UIScreen.main.bounds.size.width
     @IBOutlet weak var colltionView : UICollectionView?
     @IBOutlet weak var imageview : UIImageView?
-    @IBOutlet weak var  messagebtn :UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,9 +88,25 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
             self.QAVC()
         }
         
+        if(indexPath.row==1){
+            self.ActionVC()
+        }
+        if(indexPath.row==2){
+            self.HelpVC()
+        }
+        
+        if(indexPath.row==3){
+            self.ArticleVC()
+        }
         if(indexPath.row==4){
             self.TalkVC()
         }
+        
+        if(indexPath.row==5){
+            self.GovVC()
+        }
+        
+        
     }
    
 
@@ -105,7 +121,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     func TalkVC()
     {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let target = storyboard.instantiateViewController(withIdentifier: "MessagesVC")
+        let target = storyboard.instantiateViewController(withIdentifier: "OnlineVC")
         self.navigationController?.pushViewController(target, animated:true)
     
     }
@@ -118,14 +134,41 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         
     }
     
-//    @IBAction func TalkVC(sender : AnyObject)
-//    {
-//    
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let target = storyboard.instantiateViewController(withIdentifier: "MessagesVC")
-//        self.navigationController?.pushViewController(target, animated:true)
-//    
-//    }
+    func ActionVC()
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let target = storyboard.instantiateViewController(withIdentifier: "ActionVC")
+        self.navigationController?.pushViewController(target, animated:true)
+        
+    }
+    
+    
+    func HelpVC()
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let target = storyboard.instantiateViewController(withIdentifier: "HelpVC")
+        self.navigationController?.pushViewController(target, animated:true)
+        
+    }
+    
+    func ArticleVC()
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let target = storyboard.instantiateViewController(withIdentifier: "ArticleVC")
+        self.navigationController?.pushViewController(target, animated:true)
+        
+    }
+    
+    
+    func GovVC()
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let target = storyboard.instantiateViewController(withIdentifier: "GovVC")
+        self.navigationController?.pushViewController(target, animated:true)
+        
+    }
+    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

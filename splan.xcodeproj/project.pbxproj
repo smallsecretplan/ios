@@ -22,6 +22,11 @@
 		A25FF7CE1DE29CF300AD8C6D /* MessagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FF7CD1DE29CF300AD8C6D /* MessagesVC.swift */; };
 		A298FBC71DF2B85400D8E764 /* QACContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298FBC61DF2B85400D8E764 /* QACContentVC.swift */; };
 		A298FBC91DF2CE6B00D8E764 /* AnswerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298FBC81DF2CE6B00D8E764 /* AnswerVC.swift */; };
+		A298FBD51DF326DB00D8E764 /* ActionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298FBD41DF326DB00D8E764 /* ActionVC.swift */; };
+		A298FBD71DF3276500D8E764 /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298FBD61DF3276500D8E764 /* HelpVC.swift */; };
+		A298FBD91DF327CA00D8E764 /* ArticleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298FBD81DF327CA00D8E764 /* ArticleVC.swift */; };
+		A298FBDB1DF3281A00D8E764 /* OnlineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298FBDA1DF3281A00D8E764 /* OnlineVC.swift */; };
+		A298FBDD1DF3290700D8E764 /* GovVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298FBDC1DF3290700D8E764 /* GovVC.swift */; };
 		A2A569BE1DF27AA20078B99E /* define.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A569BD1DF27AA20078B99E /* define.swift */; };
 		A2D18CD11DE5405A00652C5B /* QAVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D18CD01DE5405A00652C5B /* QAVC.swift */; };
 		A2D18CD31DE5428800652C5B /* mentalquestion.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2D18CD21DE5428800652C5B /* mentalquestion.plist */; };
@@ -68,6 +73,11 @@
 		A25FF7CD1DE29CF300AD8C6D /* MessagesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesVC.swift; sourceTree = "<group>"; };
 		A298FBC61DF2B85400D8E764 /* QACContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QACContentVC.swift; sourceTree = "<group>"; };
 		A298FBC81DF2CE6B00D8E764 /* AnswerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerVC.swift; sourceTree = "<group>"; };
+		A298FBD41DF326DB00D8E764 /* ActionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionVC.swift; sourceTree = "<group>"; };
+		A298FBD61DF3276500D8E764 /* HelpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
+		A298FBD81DF327CA00D8E764 /* ArticleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleVC.swift; sourceTree = "<group>"; };
+		A298FBDA1DF3281A00D8E764 /* OnlineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineVC.swift; sourceTree = "<group>"; };
+		A298FBDC1DF3290700D8E764 /* GovVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GovVC.swift; sourceTree = "<group>"; };
 		A2A569BD1DF27AA20078B99E /* define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = define.swift; sourceTree = "<group>"; };
 		A2D18CD01DE5405A00652C5B /* QAVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QAVC.swift; sourceTree = "<group>"; };
 		A2D18CD21DE5428800652C5B /* mentalquestion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mentalquestion.plist; sourceTree = "<group>"; };
@@ -172,6 +182,11 @@
 				A23552F11DE055E80065F1F1 /* splan.xcdatamodeld */,
 				A2D18CD21DE5428800652C5B /* mentalquestion.plist */,
 				A2A569BD1DF27AA20078B99E /* define.swift */,
+				A298FBD41DF326DB00D8E764 /* ActionVC.swift */,
+				A298FBD61DF3276500D8E764 /* HelpVC.swift */,
+				A298FBD81DF327CA00D8E764 /* ArticleVC.swift */,
+				A298FBDA1DF3281A00D8E764 /* OnlineVC.swift */,
+				A298FBDC1DF3290700D8E764 /* GovVC.swift */,
 			);
 			path = splan;
 			sourceTree = "<group>";
@@ -464,13 +479,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A298FBD71DF3276500D8E764 /* HelpVC.swift in Sources */,
+				A298FBDD1DF3290700D8E764 /* GovVC.swift in Sources */,
 				A2A569BE1DF27AA20078B99E /* define.swift in Sources */,
 				A25FF7CE1DE29CF300AD8C6D /* MessagesVC.swift in Sources */,
+				A298FBD51DF326DB00D8E764 /* ActionVC.swift in Sources */,
 				A23552ED1DE055E80065F1F1 /* ViewController.swift in Sources */,
 				A298FBC91DF2CE6B00D8E764 /* AnswerVC.swift in Sources */,
 				A2D710191DE58B7C00B4CE97 /* ItemCell.swift in Sources */,
+				A298FBD91DF327CA00D8E764 /* ArticleVC.swift in Sources */,
 				A23552EB1DE055E80065F1F1 /* AppDelegate.swift in Sources */,
 				A2D18CD11DE5405A00652C5B /* QAVC.swift in Sources */,
+				A298FBDB1DF3281A00D8E764 /* OnlineVC.swift in Sources */,
 				A298FBC71DF2B85400D8E764 /* QACContentVC.swift in Sources */,
 				A23552F31DE055E80065F1F1 /* splan.xcdatamodeld in Sources */,
 			);

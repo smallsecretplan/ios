@@ -43,9 +43,10 @@ class MessagesVC:JSQMessagesViewController {
        
         senderId=uid
         senderDisplayName="test1"
-        self.navigationItem.title=Title.menun5_title
+      
         self.navigationController?.navigationBar.isHidden=false
-        self.navigationController?.navigationBar.barTintColor=Common.CommonColor
+        
+       
         setupBubbles()
     
         collectionView.collectionViewLayout.incomingAvatarViewSize = CGSize.zero

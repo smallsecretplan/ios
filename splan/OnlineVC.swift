@@ -1,35 +1,24 @@
 //
-//  AnswerVC.swift
+//  OnlineVC.swift
 //  splan
 //
-//  Created by cspeng on 2016/12/3.
+//  Created by cspeng on 2016/12/4.
 //  Copyright © 2016年 shan. All rights reserved.
 //
 
 import UIKit
 
-class AnswerVC: UIViewController {
+class OnlineVC: UIViewController {
 
-    
-    @IBOutlet weak var  Close :UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-     
+        
+        self.navigationItem.title=Title.menun5_title
         self.navigationController?.navigationBar.isHidden=false
-    }
-    
-    
-    
-    @IBAction func CloseVC(sender : AnyObject){
-    
-        
-        self.navigationController?.popToRootViewController(animated: true)
-        
-        
-    
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
     }
 
     override func didReceiveMemoryWarning() {
